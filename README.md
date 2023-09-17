@@ -1,3 +1,8 @@
+### Frontend
+[Live Link] (https://aditya973.github.io/quadb-frontend/)
+<https://github.com/Aditya973/quadb-frontend>
+
+
 ### Installation
 
 Clone down this repository. You will need node and npm installed globally on your machine.
