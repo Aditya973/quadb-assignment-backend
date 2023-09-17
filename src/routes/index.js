@@ -1,6 +1,7 @@
 const express = require('express');
 const Ticker = require('../models/ticker');
 
+
 const router = express.Router();
 
 router.post('/tickers',async(req,res)=>{

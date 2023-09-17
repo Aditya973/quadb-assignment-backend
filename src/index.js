@@ -5,6 +5,7 @@ const cors = require('cors');
 const connect = require('./config/database');
 const apiRoutes = require('./routes/index');
 const Ticker = require('./models/ticker');
+const axios = require('axios');
 
 const setupAndCreateServer = async ()=>{
     const app = express();
@@ -13,8 +14,8 @@ const setupAndCreateServer = async ()=>{
     app.use(cors());
     app.get('/',async (req,res)=>{
         await Ticker.deleteMany({});
-        const response = await fetch('https://api.wazirx.com/api/v2/tickers');
-        const data = await response.json();
+        const response = await axios.get('https://api.wazirx.com/api/v2/tickers');
+        const data = response.data;
         let updatedData = [];
         for(const [key,value] of Object.entries(data)){
             if(updatedData.length === 10){
