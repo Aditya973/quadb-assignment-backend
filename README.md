@@ -1,5 +1,7 @@
 ### Frontend
-[Live Link] (https://aditya973.github.io/quadb-frontend/)
+[Live Link](https://aditya973.github.io/quadb-frontend/)
+
+
 <https://github.com/Aditya973/quadb-frontend>
 
 
